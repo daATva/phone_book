@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты</title>
+  <style>
+    /* Здесь вы можете добавить свои стили */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Контакты</h1>
+    <input type="text" id="search-input" placeholder="Поиск по контактам">
+    <button id="add-button">Добавить контакт</button>
+    <button id="find-button">Найти контакт</button>
+    <button id="back-button">Вернуться назад</button>
+    <ul id="contact-list"></ul>
+  </div>
+  <div id="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>Добавить контакт</h2>
+      <form>
+        <label for="name-input">Имя:</label>
+        <input type="text" id="name-input" required>
+        <label for="phone-input">Телефон:</label>
+        <input type="text" id="phone-input" placeholder="+7 (___) ___-__-__" required>
+        <label for="favorite-checkbox">Добавить в избранное:</label>
+        <input type="checkbox" id="favorite-checkbox">
+        <button type="button" id="create-button">Создать</button>
+      </form>
+    </div>
+  </div>
+  <!-- Подключаем скрипт с логикой работы с контактами -->
+  <script src="./js/contacts.js"></script>
+  <!-- Подключаем ваш скрипт -->
+  <!-- <script src="js/json.js"></script> -->
+</body>
+</html>
