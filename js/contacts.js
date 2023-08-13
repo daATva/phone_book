@@ -73,7 +73,7 @@ function displayOrContacts() {
     let li = document.createElement("li");
     li.classList.add("contact-item");
     li.innerHTML = `
-      <img src="../img/check.png" alt="${contact.name}" class="contact-icon">
+      <img src="./img/check.png" alt="${contact.name}" class="contact-icon">
       <div class="contact-info">
         <p class="contact-name">${contact.name}</p>
         <p class="contact-phone">${contact.phone}</p>
