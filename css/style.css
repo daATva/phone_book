@@ -27,7 +27,7 @@ body{
 
 body{
 	font-family: 'Rubik';
-	font-size: 17px;
+	font-size:27px;
 	counter-reset:#616161;
 }
 
@@ -233,3 +233,4 @@ body{
 	padding: 0px 0px 10px 0px;
 	color: blue;
 }
+
