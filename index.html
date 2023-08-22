@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>augest time</title>
-    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
   <div class="contact">
-    <div class="container">
-      <h1>Контакты</h1>
-      <input type="text" id="search-input" placeholder="Поиск по контактам">
-      <button id="add-button">Добавить контакт</button>
-      <button id="find-button">Найти контакт</button>
-      <button id="back-button">Вернуться назад</button>
-      <ul id="contact-list"></ul>
-    </div>
+    <div class="contact__container">
+      <div class="contact__header">
+        <img src="./img/telephone-call.png" alt="call-image" class="call-image" width="30px">
+        <input type="text" id="search-input" placeholder="Поиск по контактам" class="search-input">
+      </div>
+     <div class="contact__body">
+    <ul id="contact-list"></ul>
     <div id="modal" style="display: none;">
       <div class="modal-content">
         <h2>Добавить контакт</h2>
@@ -29,6 +28,11 @@
         </form>
       </div>
     </div>
+    <button id="add-button">Добавить контакт</button>
+
+   </div>
+     </div>
+
   </div>
 
   <!-- Подключаем скрипт с логикой работы с контактами -->

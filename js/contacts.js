@@ -58,40 +58,6 @@ function displayContacts() {
   
   }
 }
-// Функция для отображения контактов на странице
-function displayOrContacts() {
-  // Очищаем список контактов
-  contactList.innerHTML = "";
-  // Сортируем контакты по имени и избранности
-  originalContacts.sort((a, b) => {
-    if (a.favorite && !b.favorite) return -1;
-    if (!a.favorite && b.favorite) return 1;
-    return a.name.localeCompare(b.name);
-  });
-  // Для каждого контакта создаем элемент li с мини-карточкой
-  for (let contact of originalContacts) {
-    let li = document.createElement("li");
-    li.classList.add("contact-item");
-    li.innerHTML = `
-      <img src="./img/check.png" alt="${contact.name}" class="contact-icon">
-      <div class="contact-info">
-        <p class="contact-name">${contact.name}</p>
-        <p class="contact-phone">${contact.phone}</p>
-      </div>
-      <div class="contact-buttons">
-        <button class="delete-button" data-name="${contact.name}">🗑️</button>
-        <button class="favorite-button" data-name="${contact.name}">${contact.favorite ? "❤️" : "🤍"}</button>
-      </div>
-    `;
-    // Добавляем обработчики событий для кнопок удаления и добавления в избранное
-    li.querySelector(".delete-button").addEventListener("click", deleteContact);
-    li.querySelector(".favorite-button").addEventListener("click", toggleFavorite);
-    // Добавляем элемент li к списку контактов
-    contactList.appendChild(li);
-    console.log(typeof originalContacts)
-  }
-}
-
 
 // Создаем переменную для хранения исходных контактов
 const originalsContacts = contacts;
@@ -192,8 +158,8 @@ function validatePhone(phone) {
 // Добавляем обработчики событий для элементов DOM
 searchInput.addEventListener("input", filterContacts);
 addButton.addEventListener("click", openModal);
-findButton.addEventListener('click',filterContacts)
-backButton.addEventListener('click',displayOrContacts)
+// findButton.addEventListener('click',filterContacts)
+// backButton.addEventListener('click',displayContacts)
 
 createButton.addEventListener("click", createContact);
 

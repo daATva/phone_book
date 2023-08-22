@@ -1,5 +1,5 @@
 /*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
+/* *{padding: 0;margin: 0;border: 0;} */
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
@@ -27,210 +27,53 @@ body{
 
 body{
 	font-family: 'Rubik';
-	font-size:27px;
+	font-size:17px;
 	counter-reset:#616161;
 }
 
-/* [class*="__container"]{
-	max-width: 1087px;
+[class*="__container"]{
+	max-width: 587px;
 	margin: 0 auto;
-	padding: 0px 15px;
-} */
+	padding: 15px 15px;
+
+}
+
+.contact__container{
+	border: 2px solid #000;
+	max-width: 300px;
+	margin: 50px auto 0px auto;
+	min-height: 407px;
+	
+}
 
 
-.add{
-	position: relative;
-	top: 50px;
+h1{
+	font-size: 24px;
+}
+
+.contact__body{
 	display: flex;
 	justify-content: center;
-	height: 400px;
-	width: 300px;
-	border: #0c0c0c solid 2px;
-	margin: 0 auto;
-	border-radius: 10px;
-	display: none;
-
-}
-.book {
-	height: 400px;
-	width: 300px;
-	border: #0c0c0c solid 2px;
-	margin: 0 auto;
-	border-radius: 10px;
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-}
-
-.non-active{
-	display: none;
-}
-
-.active{
-	display: block;
-}
-
-.svg-item{
-	width: 13px;
-	height: 13px;
-}
-.book__body {
-}
-.book__header {
-	display: flex;
-	padding: 15px 0px 15px 15px;
-}
-/* 
-.book__line::after{
-	content: "";
-	top: 0;
-	left: -18px;
-	position: absolute;
-	width: 300px;
-	height: 1px;
-	background: #000;
-}
-
-.book__line::before{
-	content: "";
-	bottom: 0;
-	left: -18px;
-	position: absolute;
-	width: 300px;
-	height: 1px;
-	background: #000;
-} */
-
-.header__call {
-	padding: 3px 30px 0px 0px;
-
-}
-.header__search {
-	padding: 5px 0px 0px 5px;
-	width: 240px;
-	height: 27px;
-	border: #0c0c0c solid 1px;
-	border-radius: 10px;
-}
-.search__loop {
-}
-.search__box {
-}
-.book__column {
-	display: flex;
 	flex-direction: column;
-
-
-}
-.book__row {
-	position: relative;
 }
 
-.book__grow {
-	position: relative;
-}
-.book__line {
+.contact__header{
 	display: flex;
-	padding: 7px 0px 7px 10px;
-	border: #0c0c0c solid 1px;
-	border-left:none;
-	border-right:none;
-
-}
-.book__squad {
-}
-.book__names {
-	padding: 4px 75px 0px 10px;
-
+	align-items: center;
 }
 
-.name__phone {
-}
-.book__rigt {
-}
-.book__cross {
-	padding: 3px 0px 35px 1px;
-
-}
-.book__heart {
-}
-.book__add {
-	text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 35px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height:32px;
-}
-.book__deb{
-	text-align: center;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 35px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height:32px;
-}
-.add__body{
-	font-size: 13px;
-}
-.add-color{
-	color: #fff;
-
+.call-image{
+	margin: 0px 10px 0px 0px ;
 }
 
-.book__add-pos{
-	display: flex;
-	justify-content: center;
-	margin: 10px 0px 0px 0px;
+.contact-list{
+	margin: 0px 0px 0px -20px;
 }
 
-.add__contact{
-	padding: 4px 0px 0px 5px;
+.search-input{
+	min-width: 220px;
+	border: 2px solid #000;
+	border-radius: 15px;
+	min-height: 28px;
+	padding: 0px 0px 0px 30px;
 }
-
-.add__header {
-	border-bottom: #0c0c0c solid 1px;
-}
-
-.input{
-	padding: 1px 0px 0px 5px;
-	width: 240px;
-	height: 25px;
-	border: #0c0c0c solid 1px;
-	border-radius: 10px;
-}
-
-.add-title{
-	padding: 15px 0px 0px 20px;
-}
-
-.title__input{
-	padding: 0px 0px 5px 0px;
-}
-
-.add_name__field{
-	padding: 20px 0px 0px 20px;
-	display: block;
-}
-
-.add_name__field span{
-	margin: -20px 0px 0px 5px;
-}
-
-.span {
-	padding: 0px 0px 10px 0px;
-	color: blue;
-}
-
