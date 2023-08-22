@@ -10,10 +10,15 @@
     <div class="contact__container">
       <div class="contact__header">
         <img src="./img/telephone-call.png" alt="call-image" class="call-image" width="30px">
-        <input type="text" id="search-input" placeholder="Поиск по контактам" class="search-input">
+        <div class="search-input">
+          <img src="./img/icons/loop.svg" alt="">
+          <input type="text" id="search-input" placeholder="Поиск по контактам" class="search-input-object">
+        </div>
+        
+    
       </div>
      <div class="contact__body">
-    <ul id="contact-list"></ul>
+    <ul id="contact-list" class="contact-list"></ul>
     <div id="modal" style="display: none;">
       <div class="modal-content">
         <h2>Добавить контакт</h2>

@@ -40,9 +40,10 @@ body{
 
 .contact__container{
 	border: 2px solid #000;
-	max-width: 300px;
+	max-width: 330px;
 	margin: 50px auto 0px auto;
 	min-height: 407px;
+	border-radius: 15px;
 	
 }
 
@@ -67,13 +68,36 @@ h1{
 }
 
 .contact-list{
-	margin: 0px 0px 0px -20px;
+	margin: 0px 0px 0px -40px;
 }
 
 .search-input{
-	min-width: 220px;
+	display: flex;
+	min-width: 255px;
 	border: 2px solid #000;
 	border-radius: 15px;
 	min-height: 28px;
-	padding: 0px 0px 0px 30px;
+	padding: 0px 0px 0px 10px;
+}
+
+
+.search-input-object{
+	border: 0;
+	padding: 0px 0px 0px 10px;
+}
+
+.contact-item{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+.contact-buttons{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+}
+
+.delete-button{
+	margin: 12px 0px 0px 0px;
 }
