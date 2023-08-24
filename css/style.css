@@ -101,3 +101,15 @@ h1{
 .delete-button{
 	margin: 12px 0px 0px 0px;
 }
+
+.add-button{
+	width: 200px ;
+	height: 30px ;
+	background-color: #000;
+	color: #fff;
+	border-radius:20px ;
+	margin: 0 auto;
+}
+
+.add-button:hover{
+}
