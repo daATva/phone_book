@@ -112,4 +112,13 @@ h1{
 }
 
 .add-button:hover{
+
+
+}
+
+.active{
+	display: block;
+}
+.active-non{
+	display: none;
 }
