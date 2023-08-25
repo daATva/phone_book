@@ -1,8 +1,8 @@
 let contacts = [
-  {name: "Алексей", phone: "+7(999)111-22-33", icon: "./img/check.png", favorite: true},
-  {name: "Борис", phone: "+7(888)444-55-66", icon: "user2.png", favorite: false},
-  {name: "Вера", phone: "+7(777)777-77-77", icon: "user3.png", favorite: true},
-  {name: "Галина", phone: "+7(666)666-66-66", icon: "user4.png", favorite: false},
+  {name: "Йоска", phone: "+7(999)111-22-33", icon: "./img/check.png", favorite: true},
+  {name: "Заурчик", phone: "+7(888)444-55-66", icon: "user2.png", favorite: false},
+  {name: "Макс", phone: "+7(777)777-77-77", icon: "user3.png", favorite: true},
+  {name: "Девяткинс", phone: "+7(480)048-48-80", icon: "user4.png", favorite: false},
 ];
 
 let searchInput = document.getElementById("search-input");
