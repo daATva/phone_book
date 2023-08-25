@@ -46,6 +46,11 @@ body{
 	border-radius: 15px;
 	
 }
+.modal__container{
+	border: 0px solid #000;
+	margin: 10px auto 0px auto;
+	
+}
 
 
 h1{

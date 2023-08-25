@@ -134,7 +134,6 @@ function createContact() {
     let contact = {
       name: name,
       phone: phone,
-      icon: `user${Math.floor(Math.random() * 10) + 1}.png`,
       favorite: favorite,
     };
     // Добавляем новый контакт к массиву контактов
@@ -143,6 +142,8 @@ function createContact() {
     displayContacts();
     // Закрываем модальное окно
     closeModal();
+    document.getElementById('contact-list').classList.remove('active-non')
+    document.getElementById('add-button').classList.remove('active-non')
   } else {
     // Выводим сообщение об ошибке
     alert("Пожалуйста, заполните все поля корректно.");
@@ -172,9 +173,11 @@ window.addEventListener("click", event => {
 // Отображаем контакты на странице при загрузке скрипта
 displayContacts();
 
-modal.addEventListener('click' , (e) =>{
-  document.getElementById('contact-body').classList.add('non-active')
-  document.getElementById('add-form').classList.add('active')
-  addMainBlock()
+addButton.addEventListener('click' , (e) =>{
+  document.getElementById('contact-list').classList.add('active-non')
+  document.getElementById('add-button').classList.add('active-non')
 })
+  
+createButton.addEventListener('click' , (e) =>{
 
+})
