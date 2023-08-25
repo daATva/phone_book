@@ -1,9 +1,9 @@
 // Создаем массив контактов
 let contacts = [
-  {name: "Алексей", phone: "+7 (999) 111-22-33", icon: "./img/check.png", favorite: true},
-  {name: "Борис", phone: "+7 (888) 444-55-66", icon: "user2.png", favorite: false},
-  {name: "Вера", phone: "+7 (777) 777-77-77", icon: "user3.png", favorite: true},
-  {name: "Галина", phone: "+7 (666) 666-66-66", icon: "user4.png", favorite: false},
+  {name: "Алексей", phone: "+7(999)111-22-33", icon: "./img/check.png", favorite: true},
+  {name: "Борис", phone: "+7(888)444-55-66", icon: "user2.png", favorite: false},
+  {name: "Вера", phone: "+7(777)777-77-77", icon: "user3.png", favorite: true},
+  {name: "Галина", phone: "+7(666)666-66-66", icon: "user4.png", favorite: false},
 ];
 
 // Получаем элементы DOM
@@ -152,7 +152,7 @@ function createContact() {
 
 // Функция для валидации номера телефона по маске +7 (___) ___-__-__
 function validatePhone(phone) {
-  let regex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+  let regex = /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/;
   return regex.test(phone);
 }
 
@@ -181,3 +181,6 @@ addButton.addEventListener('click' , (e) =>{
 createButton.addEventListener('click' , (e) =>{
 
 })
+// убрать в коде , что не нужно (айконы)
+// Фикс валидации , на нормальную
+// Добавить закрытй инпут на добавление контакта или просто убрать текст

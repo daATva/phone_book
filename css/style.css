@@ -127,3 +127,21 @@ h1{
 .active-non{
 	display: none;
 }
+
+.modal__button{
+	width: 200px ;
+	height: 30px ;
+	background-color: #000;
+	color: #fff;
+	border-radius:20px ;
+	margin: 0px 0px 0px 30px;
+}
+
+label{
+	display: inline-block;
+	margin: 0px 0px 15px 0px;
+}
+
+.modal__input{
+	border-radius:10px;
+}
